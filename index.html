@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Anas - CEO Gift City Qatar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        // Fallback QRCode loader function - define before using
+        window.loadQRCodeFallback = function() {
+            console.log('Primary QRCode CDN failed, loading fallback...');
+            const script = document.createElement('script');
+            script.src = 'https://unpkg.com/qrcode@1.5.3/build/qrcode.min.js';
+            script.crossOrigin = 'anonymous';
+            script.onload = function() {
+                console.log('QRCode library loaded from fallback CDN');
+                // Trigger QR code generation after fallback loads
+                if (typeof generateQRCode === 'function') {
+                    setTimeout(generateQRCode, 100);
+                }
+            };
+            script.onerror = function() {
+                console.error('Second QRCode CDN failed, trying third...');
+                // Try one more CDN
+                const script2 = document.createElement('script');
+                script2.src = 'https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.3/qrcode.min.js';
+                script2.crossOrigin = 'anonymous';
+                script2.onload = function() {
+                    console.log('QRCode library loaded from third CDN');
+                    if (typeof generateQRCode === 'function') {
+                        setTimeout(generateQRCode, 100);
+                    }
+                };
+                script2.onerror = function() {
+                    console.error('All QRCode CDNs failed to load');
+                };
+                document.head.appendChild(script2);
+            };
+            document.head.appendChild(script);
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js" onerror="loadQRCodeFallback()"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- Header Section -->
+            <div class="header" style="background-image: url('pro.jpg');">
+                <div class="profile-container">
+                    <div class="profile-image-wrapper">
+                        <img src="profile-image.jpg" alt="Muhammed Anas" class="profile-image" id="profilePhoto" onerror="this.style.display='none'; const initials = document.getElementById('profileInitials'); if(initials) initials.style.display='flex';">
+                        <div class="profile-initials" id="profileInitials">MA</div>
+                    </div>
+                </div>
+                <div class="header-info">
+                    <h1 class="name">Muhammed Anas</h1>
+                    <p class="position">Chief Executive Officer</p>
+                    <p class="company">Gift City Qatar</p>
+                </div>
+            </div>
+
+            <!-- Quick Contact Actions -->
+            <div class="quick-contact">
+                <a href="tel:+97455551387" class="action-btn">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="mailto:muhammed.anas@giftcityqatar.com" class="action-btn">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="sms:+97455551387" class="action-btn">
+                    <i class="fas fa-sms"></i>
+                </a>
+                <a href="https://wa.me/97455551387" target="_blank" class="action-btn">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <!-- Welcome Message -->
+            <div class="about-section">
+                <p class="about-text">Welcome! We are one of the finest solutions for Advertising & Printing Materials wholesale supplier in Qatar.</p>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-list">
+                <a href="tel:+97455551387" class="contact-row">
+                    <div class="row-icon phone">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="row-content">
+                        <span class="row-label">Phone</span>
+                        <span class="row-value">+974 5555 1387</span>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/97455551387" target="_blank" class="contact-row">
+                    <div class="row-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="row-content">
+                        <span class="row-label">WhatsApp</span>
+                        <span class="row-value">+974 5555 1387</span>
+                    </div>
+                </a>
+
+                <a href="mailto:muhammed.anas@giftcityqatar.com" class="contact-row">
+                    <div class="row-icon email">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="row-content">
+                        <span class="row-label">Email</span>
+                        <span class="row-value">muhammed.anas@giftcityqatar.com</span>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/giftcity_qatar?igsh=YzZtdWo0MmZiOWNv" target="_blank" class="contact-row">
+                    <div class="row-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="row-content">
+                        <span class="row-label">Instagram</span>
+                        <span class="row-value">@giftcity_qatar</span>
+                    </div>
+                </a>
+
+                <a href="https://www.tiktok.com/@giftcity_qatar?_r=1&_t=ZS-921jw9aZGeG" target="_blank" class="contact-row">
+                    <div class="row-icon tiktok">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <div class="row-content">
+                        <span class="row-label">TikTok</span>
+                        <span class="row-value">@giftcity_qatar</span>
+                    </div>
+                </a>
+
+                <a href="https://www.giftcityqatar.com/" target="_blank" class="contact-row">
+                    <div class="row-icon website">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="row-content">
+                        <span class="row-label">Website</span>
+                        <span class="row-value">giftcityqatar.com</span>
+                    </div>
+                </a>
+
+                <a href="#" class="contact-row" onclick="openGoogleMaps(); return false;">
+                    <div class="row-icon location">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="row-content">
+                        <span class="row-label">Location</span>
+                        <span class="row-value">Building 541, Ground Floor, Office 2, Old Murrah, Salwa Road, Doha</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Save Contact Button -->
+            <div class="save-section">
+                <button class="save-button" id="saveContactBtn">
+                    <i class="fas fa-download"></i>
+                    <span>Save Contact</span>
+                </button>
+            </div>
+
+            <!-- Social Share -->
+            <div class="social-section">
+                <h3 class="section-heading">Share Profile</h3>
+                <div class="social-grid">
+                    <a href="https://www.facebook.com/share/19kB69R5mq/" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/giftcity_qatar?igsh=YzZtdWo0MmZiOWNv" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@giftcity_qatar?_r=1&_t=ZS-921jw9aZGeG" target="_blank" class="social-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="#" id="whatsappShare" class="social-icon" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <img src="gift_city_logo.png" alt="Gift City Qatar" class="footer-logo">
+                <p class="footer-text">Copyright © Muhammed Anas. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
