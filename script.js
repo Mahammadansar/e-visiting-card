@@ -11,16 +11,16 @@ function setupSaveContact() {
 function generateVCard() {
     // Contact information
     const contact = {
-        firstName: 'Muhammed',
+        firstName: 'Mahammad',
         lastName: 'Anas',
-        fullName: 'Muhammed Anas',
+        fullName: 'Mahammad Anas',
         title: 'Chief Executive Officer',
         company: 'Gift City Qatar',
         email: 'anas.giftcityqatar@gmail.com',
         phone: '+97455551387',
         address: 'Gift City, Building Number 541, Ground Floor, Office Number 2, Old Murrah, Opposite Safari Hyper Market, Salwa Road, Doha, Qatar',
         website: 'https://www.giftcityqatar.com/',
-        linkedin: 'https://linkedin.com/in/muhammed-anas',
+        linkedin: 'https://linkedin.com/in/mahammad-anas',
         instagram: 'https://www.instagram.com/giftcity_qatar?igsh=YzZtdWo0MmZiOWNv',
         tiktok: 'https://www.tiktok.com/@giftcity_qatar?_r=1&_t=ZS-921jw9aZGeG',
         facebook: 'https://www.facebook.com/share/19kB69R5mq/'
@@ -142,7 +142,7 @@ function generateQRCode() {
     }
 
     const contactInfo = {
-        name: 'Muhammed Anas',
+        name: 'Mahammad Anas',
         title: 'Chief Executive Officer',
         company: 'Gift City Qatar',
         email: 'anas.giftcityqatar@gmail.com',
@@ -329,7 +329,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const whatsappShareBtn = document.getElementById('whatsappShare');
     if (whatsappShareBtn) {
         const profileUrl = window.location.href;
-        const shareText = `Hey there! 👋\nIts Muhammed Anas!\n\nHere's my digital card:\n${profileUrl}\n\nPowered by Gift City Qatar!`;
+        const shareText = `Hey there! 👋\nIts Mahammad Anas!\n\nHere's my digital card:\n${profileUrl}\n\nPowered by Gift City Qatar!`;
         const encodedText = encodeURIComponent(shareText);
         whatsappShareBtn.href = `https://api.whatsapp.com/send?text=${encodedText}`;
     }
@@ -361,7 +361,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Share Profile Function
 function shareProfile(platform) {
     const profileUrl = window.location.href;
-    const shareText = `Hey there! 👋\nIts Muhammed Anas!\n\nHere's my digital card:\n${profileUrl}\n\nPowered by Gift City Qatar!`;
+    const shareText = `Hey there! 👋\nIts Mahammad Anas!\n\nHere's my digital card:\n${profileUrl}\n\nPowered by Gift City Qatar!`;
     const encodedText = encodeURIComponent(shareText);
     const encodedUrl = encodeURIComponent(profileUrl);
 
